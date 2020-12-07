@@ -1,0 +1,9 @@
+App\Entity\Libro:
+  attributes:
+      id:
+        groups: ['libro']
+      title:
+        groups: ['libro']
+      image:
+        groups: ['libro']
+
