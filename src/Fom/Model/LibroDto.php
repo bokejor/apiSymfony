@@ -8,17 +8,17 @@ class LibroDto
 {
     public $title;
     public $base64Image;
-    // public $categories;
+    public $categories;
 
-    // public function __construct()
-    // {
-    //     $this->categories = [];
-    // }
+    public function __construct()
+    {
+        $this->categories = [];
+    }
 
-    // public static function createFromBook(Book $book): self
-    // {
-    //     $dto = new self();
-    //     $dto->title = $book->getTitle();
-    //     return $dto;
-    // }
+    public static function createFromBook(Libro $libro): self
+    {
+        $dto = new self();
+        $dto->title = $libro->getTitle();
+        return $dto;
+    }
 }

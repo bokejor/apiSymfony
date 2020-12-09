@@ -6,4 +6,8 @@ App\Entity\Libro:
         groups: ['libro']
       image:
         groups: ['libro']
+      categories:
+        groups: ['libro']
+      
+      
 
