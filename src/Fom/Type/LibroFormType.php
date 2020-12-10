@@ -28,6 +28,7 @@ class LibroFormType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => LibroDto::class,
+            'csrf_protection' => false
         ]);
     }
 

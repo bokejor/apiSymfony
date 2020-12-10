@@ -6,8 +6,9 @@ use App\Entity\Category;
 
 class CategoryDto
 {
-    public $name;
     public $id;
+    public $name;
+    
   
 
     public static function createFromCategory(Category $category): self

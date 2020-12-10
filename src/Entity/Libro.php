@@ -33,10 +33,12 @@ class Libro
      * @ORM\ManyToMany(targetEntity=Category::class, inversedBy="libros")
      */
     private $categories;
+ 
 
     public function __construct()
     {
-        $this->categories = new ArrayCollection();
+        $this -> categories = new ArrayCollection();
+        
     }
 
     public function getId(): ?int
@@ -91,4 +93,6 @@ class Libro
 
         return $this;
     }
+
+    
 }

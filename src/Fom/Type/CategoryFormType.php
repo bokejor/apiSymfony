@@ -13,6 +13,7 @@ class CategoryFormType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
+                -> add('id', TextType::class)
                 -> add('name', TextType::class);
                 
     }
@@ -21,6 +22,7 @@ class CategoryFormType extends AbstractType
     {
         $resolver->setDefaults([
             'data_class' => CategoryDto::class,
+            'csrf_protection' => false
         ]);
     }
 

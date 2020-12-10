@@ -29,9 +29,11 @@ class Category
      */
     private $libros;
 
+
     public function __construct()
     {
         $this->libros = new ArrayCollection();
+       
     }
 
     public function getId(): ?int
@@ -77,4 +79,6 @@ class Category
 
         return $this;
     }
+
+    
 }
